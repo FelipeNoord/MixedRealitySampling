@@ -4121,7 +4121,7 @@ struct MouseState_tCCE70861DE1EEECF949AFE8E2A922541D4E08A09  : public RuntimeObj
 struct U3CU3Ec_t6520A1FBE29CA9972B831C3DDBF3153B6E7E858F  : public RuntimeObject
 {
 };
-struct U3CU3Ec__DisplayClass12_0_t4AB623F0FDE453C29A99084F78B5D21FCB6DD0D5  : public RuntimeObject
+struct U3CU3Ec__DisplayClass17_0_tF6867323454C3D48353A3DEAEC99A96CBD7D7350  : public RuntimeObject
 {
 	RaycastPos_t79FE159489B93838C79CB2D8D0BD938909452DCD* ___U3CU3E4__this;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___placedMarker;
@@ -21933,12 +21933,15 @@ struct ProductPlacement_t7B13301C1D4A588FA03FABBC947644559CB20929  : public Mono
 };
 struct RaycastPos_t79FE159489B93838C79CB2D8D0BD938909452DCD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___marker;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___standardMarker;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___riskMarker;
 	bool ___addMarkerState;
+	bool ___standardMarkerState;
+	bool ___riskMarkerState;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___helpPanel;
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___titlePanel;
-	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___titleInputField;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___titleOffset;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___titleInputPanel;
+	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___titleInputField;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___placementPosition;
 	LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___placementLayer;
 };
@@ -31796,7 +31799,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize8399 = { sizeof(LookAtCamera
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize8400;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize8400 = { sizeof(MultiArea_t63BD67242CB0B6CF0C5382B34717D4BCD6508139), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize8401;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize8401 = { sizeof(U3CU3Ec__DisplayClass12_0_t4AB623F0FDE453C29A99084F78B5D21FCB6DD0D5), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize8401 = { sizeof(U3CU3Ec__DisplayClass17_0_tF6867323454C3D48353A3DEAEC99A96CBD7D7350), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize8402;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize8402 = { sizeof(RaycastPos_t79FE159489B93838C79CB2D8D0BD938909452DCD), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize8403;

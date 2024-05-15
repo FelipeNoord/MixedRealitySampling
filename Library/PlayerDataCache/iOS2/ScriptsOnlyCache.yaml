@@ -26,6 +26,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
+    - TMPro.TMP_Dropdown
     - TMPro.TMP_FontAsset
     - TMPro.TMP_InputField
     - TMPro.TMP_Settings
@@ -60,8 +61,12 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.InputField
     - UnityEngine.UI.LayoutElement
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
     Vuforia.Unity.Engine.dll:
     - Vuforia.AnchorBehaviour
@@ -87,6 +92,9 @@ ScriptsOnlyBuild:
     - TMPro.FontAssetCreationSettings
     - TMPro.KerningTable
     - TMPro.TMP_Character
+    - TMPro.TMP_Dropdown/DropdownEvent
+    - TMPro.TMP_Dropdown/OptionData
+    - TMPro.TMP_Dropdown/OptionDataList
     - TMPro.TMP_FontFeatureTable
     - TMPro.TMP_FontWeightPair
     - TMPro.TMP_Glyph
@@ -126,7 +134,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.InputField/SubmitEvent
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
+    - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.SpriteState
+    - UnityEngine.UI.Toggle/ToggleEvent
     Vuforia.Unity.Engine:
     - Vuforia.AreaTargetCaptureBehaviour/CaptureCreationErrorEvent
     - Vuforia.AreaTargetCaptureBehaviour/CaptureStartedEvent
@@ -153,7 +164,16 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: RaycastPos
+    methodName: cancel
+  - assembly: Assembly-CSharp
+    fullTypeName: RaycastPos
+    methodName: addStandardMarker
+  - assembly: Assembly-CSharp
+    fullTypeName: RaycastPos
     methodName: addIsTrue
+  - assembly: Assembly-CSharp
+    fullTypeName: RaycastPos
+    methodName: addRiskMarker
   - assembly: Vuforia.Unity.Engine
     fullTypeName: Vuforia.Internal.AreaTargetCaptureInfoPopup
     methodName: OnCaptureCreationError
@@ -340,37 +360,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16784}
-    - Class: 114
       Script: {instanceID: 16786}
     - Class: 114
       Script: {instanceID: 16788}
     - Class: 114
+      Script: {instanceID: 16790}
+    - Class: 114
       Script: {instanceID: 16792}
     - Class: 114
-      Script: {instanceID: 16846}
+      Script: {instanceID: 16794}
     - Class: 114
-      Script: {instanceID: 16992}
+      Script: {instanceID: 16848}
     - Class: 114
-      Script: {instanceID: 17594}
+      Script: {instanceID: 16994}
     - Class: 114
-      Script: {instanceID: 18128}
+      Script: {instanceID: 17596}
     - Class: 114
-      Script: {instanceID: 18162}
+      Script: {instanceID: 18130}
     - Class: 114
-      Script: {instanceID: 18530}
+      Script: {instanceID: 18136}
     - Class: 114
-      Script: {instanceID: 18588}
+      Script: {instanceID: 18164}
     - Class: 114
-      Script: {instanceID: 19096}
+      Script: {instanceID: 18532}
     - Class: 114
-      Script: {instanceID: 19384}
+      Script: {instanceID: 18590}
     - Class: 114
-      Script: {instanceID: 20102}
+      Script: {instanceID: 19098}
     - Class: 114
-      Script: {instanceID: 20124}
+      Script: {instanceID: 19386}
     - Class: 114
-      Script: {instanceID: 20212}
+      Script: {instanceID: 19824}
+    - Class: 114
+      Script: {instanceID: 20104}
+    - Class: 114
+      Script: {instanceID: 20126}
     - Class: 114
       Script: {instanceID: 20214}
     - Class: 114
@@ -378,11 +402,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 20218}
     - Class: 114
-      Script: {instanceID: 20222}
+      Script: {instanceID: 20220}
     - Class: 114
-      Script: {instanceID: 20304}
+      Script: {instanceID: 20224}
     - Class: 114
-      Script: {instanceID: 20310}
+      Script: {instanceID: 20306}
     - Class: 114
       Script: {instanceID: 20312}
     - Class: 114
@@ -390,37 +414,43 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 20316}
     - Class: 114
-      Script: {instanceID: 20338}
+      Script: {instanceID: 20318}
     - Class: 114
       Script: {instanceID: 20340}
     - Class: 114
-      Script: {instanceID: 20346}
+      Script: {instanceID: 20342}
     - Class: 114
-      Script: {instanceID: 20586}
+      Script: {instanceID: 20348}
     - Class: 114
-      Script: {instanceID: 20798}
+      Script: {instanceID: 20588}
     - Class: 114
-      Script: {instanceID: 21228}
+      Script: {instanceID: 20800}
     - Class: 114
-      Script: {instanceID: 21320}
+      Script: {instanceID: 21230}
     - Class: 114
-      Script: {instanceID: 21386}
+      Script: {instanceID: 21308}
     - Class: 114
-      Script: {instanceID: 21464}
+      Script: {instanceID: 21322}
     - Class: 114
-      Script: {instanceID: 22438}
+      Script: {instanceID: 21388}
     - Class: 114
-      Script: {instanceID: 22854}
+      Script: {instanceID: 21466}
     - Class: 114
-      Script: {instanceID: 23318}
+      Script: {instanceID: 22440}
     - Class: 114
-      Script: {instanceID: 23366}
+      Script: {instanceID: 22856}
     - Class: 114
-      Script: {instanceID: 23890}
+      Script: {instanceID: 22870}
     - Class: 114
-      Script: {instanceID: 23928}
+      Script: {instanceID: 23320}
     - Class: 114
-      Script: {instanceID: 24646}
+      Script: {instanceID: 23368}
+    - Class: 114
+      Script: {instanceID: 23892}
+    - Class: 114
+      Script: {instanceID: 23930}
+    - Class: 114
+      Script: {instanceID: 24648}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -454,6 +484,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 915204dac8acad99f076d6e72ada0a0f
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
       Hash: a2d14ea68e172d2299361f2b482ddfb0
     assemblyName: Vuforia.Unity.Engine.dll
     namespaceName: Vuforia
@@ -464,12 +500,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ScrollRect
-  - hash:
-      serializedVersion: 2
-      Hash: 915204dac8acad99f076d6e72ada0a0f
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Button
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -694,7 +724,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 9931d5ba0379fbeccd48b84b880efac3
+      Hash: e0247674c1f745e27939928cca32cf77
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: RaycastPos
@@ -3329,4 +3359,4 @@ ScriptsOnlyBuild:
   platform: 9
   scenePathNames:
   - Assets/Scenes/SamplingTest.unity
-  playerPath: C:/Users/Felip/sampling/pcroombuild
+  playerPath: C:/Users/Felip/MixedRealitySampling/pcroombuild
