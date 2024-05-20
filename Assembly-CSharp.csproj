@@ -83,6 +83,8 @@
     <Compile Include="Assets\SamplesResources\AugmentationAssets\Scripts\Augmentations\Augmentation.cs" />
     <Compile Include="Assets\SamplesResources\AugmentationAssets\Scripts\AreaTarget\ImageValueDisplay.cs" />
     <Compile Include="Assets\Scripts\MultiArea.cs" />
+    <Compile Include="Assets\Scripts\GetInfoInputPanels.cs" />
+    <Compile Include="Assets\Scripts\ViewInformationPanel.cs" />
     <Compile Include="Assets\Scripts\RaycastPos.cs" />
     <Compile Include="Assets\Scripts\DeleteMarker.cs" />
     <Compile Include="Assets\Scripts\AddInfoPanelToMarker.cs" />

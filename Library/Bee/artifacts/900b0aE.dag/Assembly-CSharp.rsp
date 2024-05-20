@@ -408,11 +408,13 @@
 "Assets/Scripts/DeleteMarker.cs"
 "Assets/Scripts/DistanceToMarker.cs"
 "Assets/Scripts/ErrorMessage.cs"
+"Assets/Scripts/GetInfoInputPanels.cs"
 "Assets/Scripts/LookAtCamera.cs"
 "Assets/Scripts/ManageStates.cs"
 "Assets/Scripts/MultiArea.cs"
 "Assets/Scripts/RaycastPos.cs"
 "Assets/Scripts/SessionList.cs"
+"Assets/Scripts/ViewInformationPanel.cs"
 -langversion:9.0
 
 /deterministic
